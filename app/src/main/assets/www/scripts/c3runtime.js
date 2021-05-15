@@ -4320,7 +4320,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		C3.Plugins.TextBox.Cnds.CompareText,
 		C3.Plugins.Browser.Acts.Alert,
 		C3.Plugins.TextBox.Exps.Text,
-		C3.Plugins.System.Exps.viewportleft
+		C3.Plugins.System.Exps.viewportleft,
+		C3.Plugins.TextBox.Acts.SetText
 		];
 	};
 	self.C3_JsPropNameTable = [
@@ -4397,6 +4398,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		{P2: 0},
 		{SelectionScreen: 0},
 		{TitleCommon: 0},
+		{BtnSave: 0},
+		{BtnInviteJoin: 0},
 		{PinAI6: 0},
 		{Box6: 0},
 		{PinPeerX6: 0},
@@ -4467,6 +4470,10 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		{txtNote6: 0},
 		{txtNote9: 0},
 		{TxtAI9: 0},
+		{NickNameTxt: 0},
+		{nickNameInput: 0},
+		{nickNameOkbtn: 0},
+		{Starss: 0},
 		{TextsOther: 0},
 		{TextInputs: 0},
 		{Btn: 0},
@@ -4527,7 +4534,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		{AndroidAdInter: 0},
 		{AndroidAdReward: 0},
 		{BackgroundImage: 0},
-		{Board: 0}
+		{Board: 0},
+		{NickName: 0}
 	];
 }
 
@@ -4645,7 +4653,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		() => "Reset",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => and("P1 - ", v0.GetValue());
+			const v1 = p._GetNode(1).GetVar();
+			return () => and((v0.GetValue() + " - "), v1.GetValue());
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -4764,6 +4773,10 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		() => 0.2,
 		() => "Offline",
 		() => "Two Player",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and("P1 - ", v0.GetValue());
+		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("P2 - ", v0.GetValue());
@@ -4959,7 +4972,6 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		() => 34,
 		() => 35,
 		() => 36,
-		() => 37,
 		() => "Moves6",
 		() => "AI6",
 		p => {
@@ -5092,9 +5104,240 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		},
 		() => "Load9",
 		() => "Reset9",
-		() => "Moves9",
+		() => 37,
+		() => 38,
+		() => 39,
+		() => 40,
+		() => 41,
+		() => 42,
+		() => 43,
+		() => 44,
+		() => 46,
+		() => 47,
+		() => 48,
+		() => 49,
+		() => 50,
+		() => 51,
+		() => 52,
+		() => 53,
+		() => 54,
+		() => 55,
+		() => 56,
+		() => 57,
+		() => 58,
+		() => 59,
+		() => 60,
+		() => 61,
+		() => 62,
+		() => 63,
+		() => 64,
+		() => 65,
+		() => 66,
+		() => 67,
+		() => 68,
+		() => 69,
+		() => 70,
+		() => 71,
+		() => 72,
+		() => 73,
+		() => 74,
+		() => 75,
+		() => 76,
+		() => 77,
+		() => 78,
+		() => 79,
+		() => 80,
 		() => 81,
+		() => "Moves9",
 		() => "AI9",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(37);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(38);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(39);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(40);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(41);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(42);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(43);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(44);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(45);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(46);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(47);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(48);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(49);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(50);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(51);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(52);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(53);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(54);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(55);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(56);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(57);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(58);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(59);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(60);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(61);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(62);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(63);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(64);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(65);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(66);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(67);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(68);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(69);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(70);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(71);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(72);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(73);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(74);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(75);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(76);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(77);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(78);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(79);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(80);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(81);
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(1, 9, 73, 81);
+		},
 		() => 0.95,
 		() => "Ads",
 		() => "Audio",
@@ -5138,6 +5381,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		() => "transparent",
 		() => "border",
 		() => "none",
+		() => "border-color",
+		() => "white",
 		() => "font-family",
 		() => "Roboto-Black",
 		() => "text-align",
@@ -5152,6 +5397,7 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 			return () => ("I'm challening you in Tic Tac Toe - Join code " + v0.GetValue());
 		},
 		() => "JOIN",
+		() => "outline",
 		() => "PLEASE ENTER THE CODE",
 		() => "RANDOM",
 		() => "ENTER THE INVITE CODE SHARED BY YOUR FRIEND",
@@ -5171,6 +5417,12 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		() => "Easy",
 		() => "HARD",
 		() => "Hard",
+		() => "15px",
+		() => "border-radius",
+		() => "5px",
+		() => "padding",
+		() => "2px",
+		() => "Save",
 		() => "3 x 3",
 		() => "6 x 6",
 		() => "9 x 9",
