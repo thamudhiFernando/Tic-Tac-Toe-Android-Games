@@ -4264,6 +4264,7 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		C3.Plugins.Arr.Exps.Height,
 		C3.Plugins.System.Exps.loopindex,
 		C3.Plugins.LocalStorage.Acts.SetItem,
+		C3.Plugins.Sprite.Acts.SetHeight,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Sprite.Acts.SetScale,
 		C3.Plugins.Browser.Cnds.OnBackButton,
@@ -4514,13 +4515,13 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		{cellValue4: 0},
 		{cellValue5: 0},
 		{cellValue6: 0},
-		{HostTurn9: 0},
 		{Value7: 0},
 		{Value8: 0},
 		{Value9: 0},
 		{cellValue7: 0},
 		{cellValue8: 0},
 		{cellValue9: 0},
+		{HostTurn9: 0},
 		{GameOver: 0},
 		{NoAd: 0},
 		{InstantAppAdsInterstitial: 0},
@@ -5494,40 +5495,195 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 			return () => (n0.ExpObject() + 50);
 		},
 		() => "ttt_functions6",
-		() => "CheckWinner7",
+		() => "CheckWinner10",
 		p => {
 			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => n0.ExpObject(3, f1("y"));
+			return () => n0.ExpObject(0, 6);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => n0.ExpObject(4, f1("y"));
+			return () => n0.ExpObject(0, 7);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => n0.ExpObject(5, f1("y"));
+			return () => n0.ExpObject(0, 8);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => n0.ExpObject(f1("y"), 3);
+			return () => n0.ExpObject(1, 6);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => n0.ExpObject(f1("y"), 4);
+			return () => n0.ExpObject(1, 7);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => n0.ExpObject(f1("y"), 5);
+			return () => n0.ExpObject(1, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(2, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(2, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(2, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(3, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(3, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(3, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(4, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(4, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(4, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(5, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(5, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(5, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 0);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 1);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 2);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 3);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 4);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 5);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(6, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 0);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 1);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 2);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 3);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 4);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 5);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(7, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 0);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 1);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 2);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 3);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 4);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 5);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 6);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 7);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(8, 8);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(1.7);
 		},
 		() => "Offline9",
 		() => "ttt_9",
 		() => "CheckWinner9",
+		() => 500,
 		() => "ttt_functions9",
 		() => 0.95,
 		() => "Ads",
