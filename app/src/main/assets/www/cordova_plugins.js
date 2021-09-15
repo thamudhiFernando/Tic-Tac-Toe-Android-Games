@@ -204,11 +204,27 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "construct-mobile-advert.ConstructAd",
-      "file": "plugins/construct-mobile-advert/www/ConstructAd.js",
-      "pluginId": "construct-mobile-advert",
+      "id": "admob-plus-cordova.AdMob",
+      "file": "plugins/admob-plus-cordova/www/admob.js",
+      "pluginId": "admob-plus-cordova",
       "clobbers": [
-        "cordova.plugins.ConstructAd"
+        "admob"
+      ]
+    },
+    {
+      "id": "cordova-plugin-consent.Consent",
+      "file": "plugins/cordova-plugin-consent/www/consent.js",
+      "pluginId": "cordova-plugin-consent",
+      "clobbers": [
+        "consent"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
       ]
     },
     {
@@ -234,10 +250,12 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-androidx-socialsharing": "1.0.0",
     "construct-plugin-file": "1.0.0",
     "construct-mobile-rate": "1.1.0",
-    "construct-mobile-advert": "1.7.3",
+    "admob-plus-cordova": "0.0.0",
+    "cordova-plugin-consent": "0.0.0",
+    "cordova-plugin-device": "2.0.3",
+    "construct-mobile-export": "1.0.0",
     "cordova-plugin-purchase": "10.5.0",
     "cordova-plugin-whitelist": "1.3.2",
-    "cordova-plugin-splashscreen": "6.0.0",
-    "cordova-plugin-vibration": "3.1.1"
+    "cordova-plugin-splashscreen": "6.0.0"
   };
 });

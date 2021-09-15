@@ -348,8 +348,8 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     implementation "com.android.support:support-v4:24.1.1+"
     implementation "com.google.android.play:core:1.10.0"
-    implementation "com.google.android.gms:play-services-ads:19.8.0"
-    implementation "com.google.android.ads.consent:consent-library:+"
+    implementation "com.google.android.gms:play-services-ads:20.1.0"
+    implementation "com.google.android.ump:user-messaging-platform:1.0.0+"
     implementation "com.android.billingclient:billing:3.0.0"
     // SUB-PROJECT DEPENDENCIES END
 }

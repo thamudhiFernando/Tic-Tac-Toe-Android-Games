@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="1000500" id="com.senturatechnologies.game" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="1000500" id="com.kingitsolutions.net" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
@@ -11,6 +11,15 @@
         <param name="onload" value="true" />
     </feature>
     <allow-navigation href="cdvfile:*" />
+    <feature name="AdMob">
+        <param name="android-package" value="admob.plus.cordova.AdMob" />
+    </feature>
+    <feature name="Consent">
+        <param name="android-package" value="cordova.plugin.consent.Consent" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
     <feature name="InAppBillingPlugin">
         <param name="android-package" value="cc.fovea.PurchasePlugin" />
     </feature>
@@ -25,12 +34,9 @@
     <feature name="RateApp">
         <param name="android-package" value="com.scirra.rateapp.RateApp" />
     </feature>
-    <feature name="ConstructAd">
-        <param name="android-package" value="com.scirra.ConstructAd" />
-    </feature>
     <name>Tic Tac Toe</name>
     <description>Tic Tac Toe</description>
-    <author email="Tic Tac Toe" href="www.senturatechnologies.com">Sentura Technologies</author>
+    <author email="Tic Tac Toe" href="www.senturatechnologies.com">King IT Solutions</author>
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-navigation href="https://*/*" />
@@ -52,6 +58,7 @@
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
-    <preference name="android-minSdkVersion" value="22" />
+    <preference name="android-minSdkVersion" value="24" />
     <preference name="android-targetSdkVersion" value="30" />
+    <preference name="AndroidXEnabled" value="true" />
 </widget>
