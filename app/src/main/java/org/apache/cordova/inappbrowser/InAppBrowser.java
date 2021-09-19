@@ -210,11 +210,11 @@ public class InAppBrowser extends CordovaPlugin {
                                 Method san = pm.getClass().getMethod("shouldAllowNavigation", String.class);
                                 shouldAllowNavigation = (Boolean)san.invoke(pm, url);
                             } catch (NoSuchMethodException e) {
-                                LOG.d(LOG_TAG, e.getLocalizedMessage());
+                                LOG.d(LOG_TAG, e.getLocalizedMessage() + "----------------------- 5");
                             } catch (IllegalAccessException e) {
-                                LOG.d(LOG_TAG, e.getLocalizedMessage());
+                                LOG.d(LOG_TAG, e.getLocalizedMessage() + "----------------------- 6");
                             } catch (InvocationTargetException e) {
-                                LOG.d(LOG_TAG, e.getLocalizedMessage());
+                                LOG.d(LOG_TAG, e.getLocalizedMessage() + "----------------------- 7");
                             }
                         }
                         // load in webview

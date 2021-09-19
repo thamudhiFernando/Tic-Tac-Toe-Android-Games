@@ -65,7 +65,7 @@ public class AssetFilesystem extends Filesystem {
                         try {
                             ois.close();
                         } catch (IOException e) {
-                            LOG.d(LOG_TAG, e.getLocalizedMessage());
+                            LOG.d(LOG_TAG, e.getLocalizedMessage() + "----------------------- 1");
                         }
                     }
                 }
@@ -127,7 +127,7 @@ public class AssetFilesystem extends Filesystem {
                 try {
                     offr.inputStream.close();
                 } catch (IOException e) {
-                    LOG.d(LOG_TAG, e.getLocalizedMessage());
+                    LOG.d(LOG_TAG, e.getLocalizedMessage()  + "----------------------- 2");
                 }
             }
         }

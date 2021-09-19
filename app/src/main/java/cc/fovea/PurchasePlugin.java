@@ -119,7 +119,7 @@ public class PurchasePlugin
       result.setKeepCallback(true);
       mListenerContext.sendPluginResult(result);
     } catch (JSONException e) {
-      Log.d(mTag, "sendToListener() -> Failed: " + e.getMessage());
+      Log.d(mTag, "sendToListener() -> Failed: " + e.getMessage()  + "----------------------- 3");
     }
   }
 
@@ -249,7 +249,7 @@ public class PurchasePlugin
             + result.getResponseCode());
       }
     } catch (Exception e) {
-      Log.e(mTag, "onQueryPurchasesFinished() -> Failed: " + e.getMessage());
+      Log.e(mTag, "onQueryPurchasesFinished() -> Failed: " + e.getMessage() + "----------------------- 4");
       callError(Constants.ERR_LOAD,
           "Failed to query purchases: " + e.getMessage());
     }

@@ -663,6 +663,7 @@ public class FileUtils extends CordovaPlugin {
                     JSONArray args = new JSONArray(rawArgs);
                     f.run(args);
                 } catch ( Exception e) {
+                    LOG.d(LOG_TAG, "----------------------- 8");
                     if( e instanceof EncodingException){
                         callbackContext.error(FileUtils.ENCODING_ERR);
                     } else if(e instanceof FileNotFoundException) {
